@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulaciones de Tecnología – Máquinas</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      padding: 1.5rem 1rem;
+      text-align: center;
+      background: linear-gradient(90deg, #1d4ed8, #06b6d4);
+      color: white;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+    h1 {
+      margin: 0.2rem 0;
+      font-size: clamp(1.8rem, 2.4vw, 2.4rem);
+    }
+    p.subtitulo {
+      margin: 0.2rem 0;
+      opacity: 0.9;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 2rem;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #1f2937;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #93c5fd;
+      font-size: 0.75rem;
+      margin-bottom: 0.6rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .acciones {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      text-decoration: none;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .btn-primario {
+      background: #2563eb;
+      color: white;
+    }
+    .btn-primario:hover {
+      background: #1d4ed8;
+    }
+    .btn-secundario {
+      background: rgba(15, 23, 42, 0.8);
+      color: #9ca3af;
+      border: 1px solid #4b5563;
+    }
+    .btn-secundario:hover {
+      border-color: #9ca3af;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    footer a {
+      color: #93c5fd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simulaciones de Tecnología – Máquinas</h1>
+    <p class="subtitulo">IES La Fresneda · 1.º de ESO – Tecnología</p>
+  </header>
+
+  <main>
+    <p>
+      Repositorio de simulaciones interactivas para trabajar conceptos de
+      fuerza, velocidad, potencia y palancas en un entorno visual.
+    </p>
+
+    <section class="grid">
+      <!-- Simulador 1 -->
+      <article class="card">
+        <span class="tag">Fuerza · Potencia · Velocidad</span>
+        <h2>🚴‍♂️ Simulador de Ciclismo: Fuerza, Potencia y Velocidad</h2>
+        <p>
+          Explora cómo cambia la fuerza necesaria según la pendiente del terreno
+          bajo potencia constante. Ideal para introducir el trabajo mecánico y la
+          relación entre fuerza, velocidad y potencia.
+        </p>
+        <div class="acciones">
+          <a class="btn btn-primario"
+             href="https://rosanaag-tecno.github.io/simuladorFuerzaVelocidadMomento/"
+             target="_blank" rel="noopener">
+            Abrir simulación
+          </a>
+          <a class="btn btn-secundario"
+             href="https://github.com/RosanaAG-Tecno/simuladorFuerzaVelocidadMomento"
+             target="_blank" rel="noopener">
+            Ver código en GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Simulador 2 -->
+      <article class="card">
+        <span class="tag">Palancas · Máquinas simples</span>
+        <h2>⚖️ Simulador de Palancas – IES La Fresneda</h2>
+        <p>
+          Comprende cómo funcionan las palancas de primer, segundo y tercer género.
+          Experimenta con distancias y fuerzas para descubrir la ley de la palanca
+          y el concepto de ventaja mecánica.
+        </p>
+        <div class="acciones">
+          <a class="btn btn-primario"
+             href="https://rosanaag-tecno.github.io/simulador-de-palancas-ies-la-fresneda/"
+             target="_blank" rel="noopener">
+            Abrir simulación
+          </a>
+          <a class="btn btn-secundario"
+             href="https://github.com/RosanaAG-Tecno/simulador-de-palancas-ies-la-fresneda"
+             target="_blank" rel="noopener">
+            Ver código en GitHub
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>
+        Más información y enlaces rápidos en el
+        <a href="https://github.com/RosanaAG-Tecno/simulaciones-tecnologia-maquinas#readme"
+           target="_blank" rel="noopener">
+          README del proyecto
+        </a>.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
